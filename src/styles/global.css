@@ -1,0 +1,67 @@
+html {
+  background-size: cover;
+  height: 100%;
+  background-color: black;
+}
+
+#pTable1 {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.85),
+    rgba(245, 245, 245, 0.85)
+  );
+  font-size: 12px;
+  border: 1px solid darkgrey;
+}
+
+#pTable2 {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.85),
+    rgba(245, 245, 245, 0.85)
+  );
+  font-size: 12px;
+  border: 1px solid darkgrey;
+}
+
+#pTable2 td {
+  border: 1px solid darkgrey;
+}
+
+#pTable2 th {
+  border: 1px solid darkgrey;
+}
+
+#pTable1 td {
+  border: 1px solid darkgrey;
+}
+
+#pTable1 th {
+  border: 1px solid darkgrey;
+}
+
+.tester {
+  font-size: 12px;
+}
+
+.customClass line {
+  stroke: white;
+}
+
+.customClass path {
+  stroke: white;
+}
+
+.customClass text {
+  fill: white;
+}
+
+.grid line {
+    stroke: #FFFFFF;
+    stroke-opacity: .3;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}

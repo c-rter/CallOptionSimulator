@@ -1,0 +1,21 @@
+input[type="range"].range-slider.range-slider--dark::-webkit-slider-thumb {
+  background: #2d4658;
+}
+input[type="range"].range-slider.range-slider--dark::-moz-range-thumb {
+  background: #2d4658;
+}
+input[type="range"].range-slider.range-slider--dark::-ms-thumb {
+  background: #2d4658;
+}
+
+input[type="range"].range-slider {
+  color: black;
+}
+
+input[type="range"].range-slider::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  border: none;
+  height: 4px;
+  background: rgb(155, 180, 235);
+  border-radius: 2px;
+}
