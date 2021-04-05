@@ -1,10 +1,7 @@
 import React, { useContext } from "react"
-import { StateContext } from "../providers/StateProvider"
-import { Link } from "gatsby"
 
 
 const LeftHeader = () => {
-  const { message, setMessage } = useContext(StateContext)
 
   const mStyle = {
     "font-size":"16px",

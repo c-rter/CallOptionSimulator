@@ -28,14 +28,17 @@ let scholes = option => {
   // Black-Scholes-Merton Formula into JS (European Call) -------------------------------------------------------------------------
   let num1 =
     Math.log(option.stockPrice / option.exercisePrice) +
-    ((option.interest + ((option.vol * option.vol) / 2)) * (option.DTE / 365))
+    (option.interest + (option.vol * option.vol) / 2) * (option.DTE / 365)
   let num2 = Math.sqrt(option.DTE / 365) * option.vol
   let d1 = num1 / num2
   let d2 = d1 - num2
   let normD1 = normalcdf(d1)
   let normD2 = normalcdf(d2)
   let min = option.stockPrice * normD1
-  let sub = option.exercisePrice * (Math.exp(1) ** (-option.interest * (option.DTE / 365))) * normD2
+  let sub =
+    option.exercisePrice *
+    Math.exp(1) ** (-option.interest * (option.DTE / 365)) *
+    normD2
   let value = min - sub
 
   return value
@@ -227,7 +230,7 @@ let createOption = liveOpt => {
       //     console.log(`DAYS TO EXPIRY ${activeDTE}`)
     }
     if (optionF.stockPrice <= 0) {
-     // console.log("BANKRUPT")
+      // console.log("BANKRUPT")
       break
     }
   }
@@ -235,7 +238,7 @@ let createOption = liveOpt => {
   let returns = stockValue - initStockValue
   let returnPercent = (returns / initStockValue) * 100
 
- /* console.log(`Closing Bell, XYZ Global: $${stockValue / 100}`)
+  /* console.log(`Closing Bell, XYZ Global: $${stockValue / 100}`)
   console.log(
     `Total Returns: $${
       returns / 100
@@ -268,7 +271,7 @@ let createOption = liveOpt => {
     marketData.pop()
     percentager = -100.0
     perCon = initPrice * -1
-//  console.log("percon " + perCon)
+    //  console.log("percon " + perCon)
 
     marketData.push({
       date: formattedDate,
@@ -282,9 +285,9 @@ let createOption = liveOpt => {
     })
   } else {
     percentager = ((optionF.stockPrice - stockPrice) / stockPrice) * 100
-  //  console.log("percentager is" + percentager)
+    //  console.log("percentager is" + percentager)
     percentGain = ((newOptionValue * 100 - initPrice) / initPrice) * 100
-  /*  console.log(newOptionValue)
+    /*  console.log(newOptionValue)
     console.log(initPrice)
     console.log("percentage gain on option is " + percentGain) */
     percentGain = percentGain.toFixed(2)
@@ -305,26 +308,21 @@ let createOption = liveOpt => {
   return marketData
 }
 
-
-
-
-
-
-
-
 // d3 Graph -----------------------------------------------------------------------------------------------------
 
 let runSim = (newArr, luck) => {
   // alert(newArr);
   let zOpt = createOption(newArr, luck)
-/*  console.log("zOpt ")
+  /*  console.log("zOpt ")
   console.log(zOpt)
   console.log(zOpt[zOpt.length - 1].hiLo) */
 
   let margin = { top: 20, right: 30, bottom: 30, left: 35 },
     width = 600 - margin.left - margin.right,
     height = 250 - margin.top - margin.bottom
-  document.getElementById("my_dataviz").innerHTML = ""
+  if (typeof window !== `undefined`) {
+    document.getElementById("my_dataviz").innerHTML = ""
+  }
   let svg = d3
     .select("#my_dataviz")
     .append("svg")
@@ -433,9 +431,10 @@ let runSim = (newArr, luck) => {
     .attr("r", 3)
     .attr("fill", "#FFFFFF")
     .on("mouseover", function (event, d) {
-     // console.log(d)
-      formatD = (d.price).toFixed(2)
-      document.getElementById("#dOpt").innerHTML = "Stock Price: $" + d.value + "    Option Premium: $" + formatD ;
+      // console.log(d)
+      formatD = d.price.toFixed(2)
+      document.getElementById("#dOpt").innerHTML =
+        "Stock Price: $" + d.value + "    Option Premium: $" + formatD
     })
     .on("mouseout", function () {
       document.getElementById("#dOpt").innerHTML =
