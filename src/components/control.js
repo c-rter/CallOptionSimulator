@@ -142,8 +142,8 @@ const Control = () => {
 
   return (
     <div style={cStyle} className="wrapper">
-      <h3>Enter Option</h3>
-      Current Stock Price (Between $1 - $2500)
+      <h3 style={{"margin-bottom" : "15px"}}>Enter Option</h3>
+      <div style={{"margin-bottom":"3px"}}>Current Stock Price ($1 - $2500)</div>
       <Form.Group as={Row}>
         <Col lg="8">
           <RangeSlider
@@ -161,7 +161,7 @@ const Control = () => {
           />
         </Col>
       </Form.Group>
-      Strike Price (Between $1 - $2500)
+      <div style={{"margin-bottom":"3px"}}>Strike Price ($1 - $2500)</div>
       <Form.Group as={Row}>
         <Col lg="8">
           <RangeSlider
@@ -180,7 +180,7 @@ const Control = () => {
         </Col>
       </Form.Group>
       <Form>
-        RF Interest Rate (Between 0% and 10%)
+        <div style={{"margin-bottom":"3px"}}>RF Interest Rate (0% - 10%)</div>
         <Form.Group as={Row}>
           <Col lg="8">
             <RangeSlider
@@ -199,7 +199,7 @@ const Control = () => {
             />
           </Col>
         </Form.Group>
-        IV Percentage (Between 1% and 200%)
+        <div style={{"margin-bottom":"3px"}}>IV Percentage (1% - 200%)</div>
         <Form.Group as={Row}>
           <Col lg="8">
             <RangeSlider
@@ -217,7 +217,7 @@ const Control = () => {
             />
           </Col>
         </Form.Group>
-        Days to Expiry (Between 7 and 90)
+        <div style={{"margin-bottom":"3px"}}>Days to Expiry (7 - 90)</div>
         <Form.Group as={Row}>
           <Col lg="8">
             <RangeSlider
@@ -235,7 +235,7 @@ const Control = () => {
             />
           </Col>
         </Form.Group>
-        Luck
+        <div style={{"margin-bottom":"3px"}}>Luck</div>
         <Form.Group>
           <Form.Control
             as="select"
