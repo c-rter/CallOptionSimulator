@@ -2,13 +2,14 @@
 <h1 align="left">
   Call Option Simulator
 </h1>
-<h2>by Carter Lawson at SUPERMAPLE.systems</h2>
 
 This simulator is designed to assist in learning call options.
 
 Generate custom charts to see how a call option's premium changes over various scenarios and parameters.
 
 Charts are generated based on normal distribution and options priced with the Black-Scholes-Merton model.
+
+_Created by Carter Lawson at [SUPERMAPLE.systems](supermaple.systems)_
 
 ## 🚀 Stack
 
@@ -28,6 +29,26 @@ React-bootstrap-range-slider
 
 JS Normal Distribution function via T. Ferguson UCLA Math  
 D3.js Graph Gallery Connected Scatterplot via Y. Holtz
+
+## 🧐 About Chart Generation
+
+The simulation (tools/simGraph.js) generates a normal distribution
+of price movement relative to the volatility input. Daily SD (standard deviation) is calculated, then an
+RNG roll is conducted for a percentage of the daily SD. A multiplier is applied to the daily SD based on another RNG roll
+for a normal distribution of "types" of movement days (enabling days where movement surpasses the first deviation). 
+
+Changes to the "Luck" parameter affects price movements that fall within the 1st deviation to be all positive
+or all negative (68%). As this does not affect 2nd+ deviation movement days, a simulation with "good" luck still
+has a slim chance of trending downward. Repeated simulation with selected luck influence should generate desired result.
+
+## 🎓 Disclaimer
+
+This model is for learning purposes only and is not intended to be financial advice.
+Though it mimics the realistic movement of option prices, actual market prices will vary,
+transaction fees will apply, and option prices will be further affected by changes in implied volatility
+(this model uses consistent IV throughout projections)
+
+<h2 align="left">About Call Options</h2>
 
 ## 🎓 What is a Call Option Contract?
 
@@ -111,7 +132,7 @@ stock price is also larger ($2.50). The same movement in Option 2
 only moves the option’s value $0.10, because it still has a long
 way to go before it is “in the money”. What you are noticing is a
 difference in delta, one of the five option greeks that are used
-to measure risk. More about the option greeks can be learned here:
+to measure risk. More about the option greeks can be learned [here.](https://www.youtube.com/watch?v=GxmIvvROge4&ab_channel=TDAmeritrade)
 
 ## 🎓 Risk Free Interest Rate
 
@@ -152,23 +173,5 @@ than double in growth. A single deviation of this stock would be
 $150, therefore there is an estimated 68% chance it stays within
 the $0 - $250 range. Probability would further dictate a ceiling
 of $400 for the second deviation (27%), and $550 for the third (0.2%).
-
-## 🧐 About Chart Generation
-
-The simulation (tools/simGraph.js) generates a normal distribution
-of price movement relative to the volatility input. Daily SD (standard deviation) is calculated, then an
-RNG roll is conducted for a percentage of the daily SD. A multiplier is applied to the daily SD based on another RNG roll
-for a normal distribution of "types" of movement days (enabling days where movement surpasses the first deviation). 
-
-Changes to the "Luck" parameter affects price movements that fall within the 1st deviation to be all positive
-or all negative (68%). As this does not affect 2nd+ deviation movement days, a simulation with "good" luck still
-has a slim chance of trending downward. Repeated simulation with selected luck influence should generate desired result.
-
-## 🎓 Disclaimer
-
-This model is for learning purposes only and is not intended to be financial advice.
-Though it mimics the realistic movement of option prices, actual market prices will vary,
-transaction fees will apply, and option prices will be further affected by changes in implied volatility
-(this model uses consistent IV throughout projections)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
