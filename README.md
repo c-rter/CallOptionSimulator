@@ -9,7 +9,7 @@ Generate custom charts to see how a call option's premium changes over various s
 
 Charts are generated based on normal distribution and options priced with the Black-Scholes-Merton model.
 
-_Created by Carter Lawson at [SUPERMAPLE.systems](supermaple.systems)_
+_Created by Carter Lawson at [SUPERMAPLE.systems](https://www.supermaple.systems)_
 
 ## 🧱 Stack
 
@@ -48,7 +48,7 @@ Though it mimics the realistic movement of option prices, actual market prices w
 transaction fees will apply, and option prices will be further affected by changes in implied volatility
 (this model uses consistent IV throughout projections)
 
-<h3 align="left">About Call Options</h3>
+<h1 align="left">About Call Options</h1>
 
 ## ❓ What is a Call Option Contract?
 
