@@ -416,6 +416,7 @@ let runSim = (newArr, luck) => {
     )
   // Add the points
   let formatD = 0
+  let formatS = 0
   svg
     .append("g")
     .selectAll("dot")
@@ -433,8 +434,10 @@ let runSim = (newArr, luck) => {
     .on("mouseover", function (event, d) {
       // console.log(d)
       formatD = d.price.toFixed(2)
+      formatS = d.value.toFixed(2)
+
       document.getElementById("#dOpt").innerHTML =
-        "Stock Price: $" + d.value + "    Option Premium: $" + formatD
+        "Stock Price: $" + formatS + "    Option Premium: $" + formatD
     })
     .on("mouseout", function () {
       document.getElementById("#dOpt").innerHTML =
