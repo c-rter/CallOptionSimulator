@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<h1 align="left">
-  Call Option Simulator
+<h1 align="left"> 
+🗠 Call Option Simulator
 </h1>
 
 This simulator is designed to assist in learning call options.
@@ -11,7 +11,7 @@ Charts are generated based on normal distribution and options priced with the Bl
 
 _Created by Carter Lawson at [SUPERMAPLE.systems](supermaple.systems)_
 
-## 🚀 Stack
+## 🧱 Stack
 
 **Main Technologies:**
 
@@ -28,9 +28,9 @@ React-bootstrap-range-slider
 **Other:**
 
 JS Normal Distribution function via T. Ferguson UCLA Math  
-D3.js Graph Gallery Connected Scatterplot via Y. Holtz
+D3.js Graph Gallery Connected Scatterplot Starter via Y. Holtz
 
-## 🧐 About Chart Generation
+## 📈 About Chart Generation
 
 The simulation (tools/simGraph.js) generates a normal distribution
 of price movement relative to the volatility input. Daily SD (standard deviation) is calculated, then an
@@ -41,16 +41,16 @@ Changes to the "Luck" parameter affects price movements that fall within the 1st
 or all negative (68%). As this does not affect 2nd+ deviation movement days, a simulation with "good" luck still
 has a slim chance of trending downward. Repeated simulation with selected luck influence should generate desired result.
 
-## 🎓 Disclaimer
+## ⚖️ Disclaimer
 
 This model is for learning purposes only and is not intended to be financial advice.
 Though it mimics the realistic movement of option prices, actual market prices will vary,
 transaction fees will apply, and option prices will be further affected by changes in implied volatility
 (this model uses consistent IV throughout projections)
 
-<h2 align="left">About Call Options</h2>
+<h3 align="left">About Call Options</h3>
 
-## 🎓 What is a Call Option Contract?
+## ❓ What is a Call Option Contract?
 
 A call option contract gives a purchaser the right to buy a set
 amount of shares at a predetermined price. A standard stock option
@@ -61,7 +61,7 @@ call holder.
 All call contracts have two main features, a strike price and an
 expiration date.
 
-## 🎓 Strike Price
+## ❌ Strike Price
 
 The strike price is the fixed price at which a contract can be
 surpass the strike price in order for the contract to be worthy of
@@ -72,7 +72,7 @@ market. For example, a contract could allow the purchaser to buy
 $106, exercising the contract to buy at the lower strike price
 would lead to a $1 profit on every share purchased.
 
-## 🎓 Expiration Date
+## 🕑 Expiration Date
 
 The expiration date dictates the amount of time the contract is
 valid. The value of the option is dependent on the amount of days
@@ -89,7 +89,7 @@ Note: This simulator uses the Black-Scholes-Merton model for
 pricing European options, but the fundamentals observed are still
 relevant to those purchasing American derivatives.
 
-## 🎓 Premium
+## 💰 Premium
 
 The incentive for the option seller is the premium. The premium is
 the total cost of the option. This includes both the current value
@@ -111,7 +111,7 @@ American/European). The premium in this case factors in the amount
 the stock has surpassed the strike price, and the potential for it
 to move further.
 
-## 🎓 Rates of Change
+## 🧮 Rates of Change
 
 Where the stock price lies in relation to the strike price effects
 the options value and rates of change.  
@@ -134,7 +134,7 @@ way to go before it is “in the money”. What you are noticing is a
 difference in delta, one of the five option greeks that are used
 to measure risk. More about the option greeks can be learned [here.](https://www.youtube.com/watch?v=GxmIvvROge4&ab_channel=TDAmeritrade)
 
-## 🎓 Risk Free Interest Rate
+## 🏦 Risk Free Interest Rate
 
 The risk-free interest rate is a hypothetical rate of return
 representing what an investor could expect to receive on an
@@ -145,7 +145,7 @@ reliable benchmarks. As call options free up capital investment
 opportunities for the call purchaser, higher interest rates will
 create higher priced options.
 
-## 🎓 Implied Volatility Percentage
+## 💸 Implied Volatility Percentage
 
 Implied Volatility is a metric estimating the range of future
 share price movement. IV is determined by measuring historical
