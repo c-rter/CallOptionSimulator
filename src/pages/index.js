@@ -60,7 +60,7 @@ const App = () => {
     height: "100vh",
     "background-size": "cover",
     "background-image":
-      'linear-gradient(to bottom, rgba(16, 46, 69, 0.90), rgba(0, 0, 0, 1)), url("../../bg1.jpg")',
+      'linear-gradient(to bottom, rgba(16, 46, 69, 0.90), rgba(0, 0, 0, 1)), url("../../bg2.jpg")',
   }
 
   /*
