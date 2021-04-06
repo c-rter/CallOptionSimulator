@@ -11,7 +11,6 @@ import Button from "react-bootstrap/Button"
 import Learn from "../components/learn"
 import { Github } from 'react-bootstrap-icons';
 
-
 /*
 const Statekeeper = () => {
   const [t1, sett1] = React.useState(0);
@@ -133,7 +132,7 @@ IMAGE LINK "images/bg.jpg"
                   {t1 ? (
                     <Control />
                   ) : (
-                    <Image style={{"margin-top": "25px", "margin-left":"-20px"}} src="../images/tester2.png" fluid/>
+                    <Image style={{"margin-top": "25px", "margin-left":"-20px"}} src="../../bsmf.png" fluid/>
                   )}
                 </div>
               </Col>
