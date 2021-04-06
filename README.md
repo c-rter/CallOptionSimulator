@@ -18,19 +18,19 @@ Charts are generated based on normal distribution and options priced with the Bl
 
 **Main Technologies:**
 
-Javascript
-React/GatsbyJS
+Javascript  
+React/GatsbyJS  
 D3
 
 **NPM Packages Used:**
 
-React-bootstrap
-React-bootstrap-icons
-React-bootstrap-range-slider
+React-bootstrap  
+React-bootstrap-icons  
+React-bootstrap-range-slider  
 
 **Other:**
 
-JS Normal Distribution function via T. Ferguson UCLA Math
+JS Normal Distribution function via T. Ferguson UCLA Math  
 D3.js Graph Gallery Connected Scatterplot via Y. Holtz
 
 ## 🧐 About Chart Generation
