@@ -125,7 +125,7 @@ IMAGE LINK "images/bg.jpg"
                 <div style={hStyle}>
                   <LeftHeader />
                   <Button style={{"margin-top": "8px", "background-color": "#2D4658"}} onClick={v => doBoth(true)}>{buttonText}</Button><br/>
-                  <Button style={{"margin-top": "8px", "margin-bottom":"8px", "background-color": "#5788ad"}} onClick={v => doBoth(true)}>View on Github <Github color="white" size={16}/></Button><br/>
+                  <Button href="https://github.com/c-rter/CallOptionSimulator" style={{"margin-top": "8px", "margin-bottom":"8px", "background-color": "#5788ad"}}>View on Github <Github color="white" size={16}/></Button><br/>
                   <span style={superMaple}>created by <a href="https://supermaple.systems">SUPERMAPLE.systems</a></span>
                 </div>
                 <div>
