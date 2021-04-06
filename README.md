@@ -50,7 +50,7 @@ transaction fees will apply, and option prices will be further affected by chang
 
 <h1 align="left">About Call Options</h1>
 
-## ❓ What is a Call Option Contract?
+## ❓ What is a Call Option Contract
 
 A call option contract gives a purchaser the right to buy a set
 amount of shares at a predetermined price. A standard stock option
