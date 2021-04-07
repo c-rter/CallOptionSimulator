@@ -49,7 +49,7 @@ has a slim chance of trending downward. Repeated simulation with selected luck i
 
 This resource is for learning purposes only and is not intended to represent
 actual future price movement or financial advice.
-Though it mimics the realistic movement of option prices for education, actual market prices will vary,
+Though it mimics the movement of option prices for basic education, actual market prices will vary,
 transaction fees will apply, and option prices will be further affected by changes in implied volatility
 (this model uses consistent IV throughout projections).
 
