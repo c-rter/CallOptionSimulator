@@ -6,5 +6,8 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata:{
+    title:"Call Option Simulator",
+    description: "A stock market simulator to assist in the purchase of call option derivatives"
+  }
 }
