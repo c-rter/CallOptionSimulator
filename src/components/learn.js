@@ -173,8 +173,7 @@ const Learn = () => {
               only moves the option’s value $0.10, because it still has a long
               way to go before it is “in the money”. What you are noticing is a
               difference in delta, one of the five option greeks that are used
-              to measure risk. More about the option greeks can be learned here:
-              ADD LINK
+              to measure risk. More about the option greeks can be learned <a href="https://www.youtube.com/watch?v=GxmIvvROge4">here.</a>
             </p>
           </Card.Body>
         </Accordion.Collapse>
