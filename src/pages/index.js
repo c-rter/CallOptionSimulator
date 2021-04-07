@@ -119,8 +119,7 @@ IMAGE LINK "images/bg.jpg"
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Helmet Test</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <title>Call Option Simulator</title>
       </Helmet>
       <Container fluid style={contStyle}>
         <Row style={myStyle}>
