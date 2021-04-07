@@ -1,9 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <h1 align="left"> 
-🗠 Call Option Simulator
+ Call Option Simulator 🗠 [calloption.trade](https://www.calloption.trade)
 </h1>
-
-Deployed on Gatsby Cloud: [calloption.trade](https://www.calloption.trade)
 
 This simulator is designed to assist in learning call options.
 
