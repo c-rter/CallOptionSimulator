@@ -52,6 +52,8 @@ Though it mimics the realistic movement of option prices, actual market prices w
 transaction fees will apply, and option prices will be further affected by changes in implied volatility
 (this model uses consistent IV throughout projections)
 
+---
+
 <h1 align="left">About Call Options</h1>
 
 ## 📃 What is a Call Option Contract?
