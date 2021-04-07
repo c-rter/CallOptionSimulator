@@ -10,6 +10,7 @@ import Image from "react-bootstrap/Image"
 import Button from "react-bootstrap/Button"
 import Learn from "../components/learn"
 import { Github } from 'react-bootstrap-icons';
+import { Helmet } from "react-helmet"
 
 /*
 const Statekeeper = () => {
@@ -116,6 +117,11 @@ IMAGE LINK "images/bg.jpg"
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Helmet Test</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Container fluid style={contStyle}>
         <Row style={myStyle}>
           <Col style={myStyle} md="4">
@@ -124,19 +130,19 @@ IMAGE LINK "images/bg.jpg"
               <Col md="11">
                 <div style={hStyle}>
                   <LeftHeader />
-                  <Button style={{"margin-top": "8px", "background-color": "#2D4658"}} onClick={v => doBoth(true)}>{buttonText}</Button><br/>
-                  <Button href="https://github.com/c-rter/CallOptionSimulator" style={{"margin-top": "8px", "margin-bottom":"8px", "background-color": "#5788ad"}}>View on Github <Github color="white" size={16}/></Button><br/>
+                  <Button style={{ "margin-top": "8px", "background-color": "#2D4658" }} onClick={v => doBoth(true)}>{buttonText}</Button><br />
+                  <Button href="https://github.com/c-rter/CallOptionSimulator" style={{ "margin-top": "8px", "margin-bottom": "8px", "background-color": "#5788ad" }}>View on Github <Github color="white" size={16} /></Button><br />
                   <span style={superMaple}>created by <a href="https://supermaple.systems">SUPERMAPLE.systems</a></span>
                 </div>
                 <div>
                   {t1 ? (
                     <Control />
                   ) : (
-                    <Image style={{"margin-top": "25px", "margin-left":"-20px"}} src="../../bsmf.png" fluid/>
-                  )}
+                      <Image style={{ "margin-top": "25px", "margin-left": "-20px" }} src="../../bsmf.png" fluid />
+                    )}
                 </div>
               </Col>
-              
+
             </Row>
           </Col>
           <Col style={myStyle} md="8">

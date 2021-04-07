@@ -6,8 +6,5 @@
 
 module.exports = {
   /* Your site config here */
-  siteMetadata:{
-    title:"Call Option Simulator",
-    description: "A stock market simulator to assist in the purchase of call option derivatives"
-  }
+  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-gatsby-cloud`],
 }
