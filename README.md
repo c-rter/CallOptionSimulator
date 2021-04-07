@@ -50,7 +50,7 @@ has a slim chance of trending downward. Repeated simulation with selected luck i
 This model is for learning purposes only and is not intended to be financial advice.
 Though it mimics the realistic movement of option prices, actual market prices will vary,
 transaction fees will apply, and option prices will be further affected by changes in implied volatility
-(this model uses consistent IV throughout projections)
+(this model uses consistent IV throughout projections).
 
 ---
 
@@ -162,7 +162,7 @@ deviation of the stock price over a period of one year. Standard
 deviation is a statistics concept that measures the likelihood of
 outcomes. In a normal distribution bell curve, 68% of outcomes are
 estimated to fall within one standard deviation, 27% of outcomes
-within two deviations, 4.5% within three deviations, and 0.2%
+within two deviations, 4.5% within three deviations, and 0.2%.
 
 This is best explained with a couple examples:
 
