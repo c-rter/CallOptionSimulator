@@ -3,6 +3,8 @@
 🗠 Call Option Simulator
 </h1>
 
+Deployed on Gatsby Cloud: [calloption.trade](https://www.calloption.trade)
+
 This simulator is designed to assist in learning call options.
 
 Generate custom charts to see how a call option's premium changes over various scenarios and parameters.
