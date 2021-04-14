@@ -85,7 +85,7 @@ const Control = () => {
       zVol = zVol * 100
       zVol = zVol.toFixed(2)
       let realOpt = initOptPrice / 100
-      realOpt = realOpt.toFixed(2)
+      realOpt = realOpt.toFixed(0)
       initOptPrice = realOpt * 100
       initOptPrice = initOptPrice.toFixed(2)
       let finalOptPrem = finalOptValue / 100
