@@ -64,7 +64,7 @@ const PerformanceTable = () => {
   const stockSpread2 = [
     {
       z1: `Strike Price: $${message[1]}`,
-      z2: `Volatility: ${message[3] * 100}%`,
+      z2: `Volatility: ${message[3]}%`,
       z3: `Days to Expiry: ${message[4]}`,
       z4: `Risk Free Interest Rate: ${message[2]}%`
     },
