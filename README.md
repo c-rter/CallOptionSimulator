@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <h1 align="left"> 
-🗠 Call Option Simulator
+Call Option Simulator
 </h1>
 
 Live on Gatsby Cloud: [calloption.trade](https://www.calloption.trade)
