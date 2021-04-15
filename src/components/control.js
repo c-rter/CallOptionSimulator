@@ -83,9 +83,9 @@ const Control = () => {
       let optPerCon = n[n.length - 1].perContractGain
       let zVol = xVol.toFixed(2)
       zVol = zVol * 100
-      zVol = zVol.toFixed(2)
+      zVol = zVol.toFixed(0)
       let realOpt = initOptPrice / 100
-      realOpt = realOpt.toFixed(0)
+      realOpt = realOpt.toFixed(2)
       initOptPrice = realOpt * 100
       initOptPrice = initOptPrice.toFixed(2)
       let finalOptPrem = finalOptValue / 100
