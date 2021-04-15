@@ -12,10 +12,31 @@ input[type="range"].range-slider {
   color: black;
 }
 
-input[type="range"].range-slider::-webkit-slider-runnable-track {
+input[type=range].range-slider::-webkit-slider-runnable-track {
   box-sizing: border-box;
   border: none;
   height: 4px;
-  background: rgb(155, 180, 235);
+  background: #9bb4eb;
+  border-radius: 2px;
+}
+input[type=range].range-slider::-moz-range-track {
+  box-sizing: border-box;
+  border: none;
+  height: 4px;
+  background: #9bb4eb;
+  border-radius: 2px;
+}
+input[type=range].range-slider::-ms-track {
+  box-sizing: border-box;
+  border: none;
+  height: 4px;
+  background: #9bb4eb;
+  border-radius: 2px;
+}
+input[type=range].range-slider::-ms-fill-lower {
+  box-sizing: border-box;
+  border: none;
+  height: 4px;
+  background: #9bb4eb;
   border-radius: 2px;
 }
