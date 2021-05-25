@@ -1,15 +1,15 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <h1 align="left"> 
-Call Option Simulator
+Call Option Contract Simulator
 </h1>
 
 Live on Gatsby Cloud: [calloption.trade](https://www.calloption.trade)
 
 ---
 
-This simulator is designed to assist in learning call options.
+Use this web simulator to generate realistic option contract scenarios before entering the market with real money. 
 
-Generate custom charts to see how a call option's premium changes over various scenarios and parameters.
+View day by day changes in option premium with dynamic D3 charting.
 
 Charts are generated based on normal distribution and options priced with the Black-Scholes-Merton model.
 
@@ -33,17 +33,6 @@ React-bootstrap-range-slider
 
 JS Normal Distribution function via T. Ferguson UCLA Math  
 D3.js Graph Gallery Connected Scatterplot Starter via Y. Holtz
-
-## 📈 About Chart Generation
-
-The simulation (tools/simGraph.js) generates a normal distribution
-of price movement relative to the volatility input. Daily SD (standard deviation) is calculated, then an
-RNG roll is conducted for a percentage of the daily SD. A multiplier is applied to the daily SD based on another RNG roll
-for a normal distribution of "types" of movement days (enabling days where movement surpasses the first deviation). 
-
-Changes to the "Luck" parameter affects price movements that fall within the 1st deviation to be all positive
-or all negative (68%). As this does not affect 2nd+ deviation movement days, a simulation with "good" luck still
-has a slim chance of trending downward. Repeated simulation with selected luck influence should generate desired result.
 
 ## ⚖️ Disclaimer
 
@@ -180,5 +169,16 @@ than double in growth. A single deviation of this stock would be
 $150, therefore there is an estimated 68% chance it stays within
 the $0 - $250 range. Probability would further dictate a ceiling
 of $400 for the second deviation (27%), and $550 for the third (0.2%).
+
+## 📈 About Chart Generation
+
+The simulation (tools/simGraph.js) generates a normal distribution
+of price movement relative to the volatility input. Daily SD (standard deviation) is calculated, then an
+RNG roll is conducted for a percentage of the daily SD. A multiplier is applied to the daily SD based on another RNG roll
+for a normal distribution of "types" of movement days (enabling days where movement surpasses the first deviation). 
+
+Changes to the "Luck" parameter affects price movements that fall within the 1st deviation to be all positive
+or all negative (68%). As this does not affect 2nd+ deviation movement days, a simulation with "good" luck still
+has a slim chance of trending downward. Repeated simulation with selected luck influence should generate desired result.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
